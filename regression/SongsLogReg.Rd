@@ -24,7 +24,7 @@ print(summary(model))
 print("Checking correlation between variables")
 print(cor(songsTrain))
 
-print("Creating improved linear reg model 2")
+print("Creating improved logistic reg model 2")
 model2=glm(Top10 ~ .-energy, data=songsTrain, family=binomial)
 print(summary(model2))
 
