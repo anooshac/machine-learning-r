@@ -2,7 +2,7 @@ library("forecast")
 library("TTR")
 
 print("Reading data into dataframe")
-data <- read.csv("GS_1year_StockData.csv")
+gsData <- read.csv("GS_1year_StockData.csv")
 summary(data)
 
 plot(data$Date, data$Close, xlab="Dates", ylab="Close price", type="l", col="red", main="Closing prices of Goldman Sachs for past 2 years")
